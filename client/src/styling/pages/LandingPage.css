@@ -1,0 +1,95 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 249, 249);
+}
+
+.background-container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    display: flex;
+    border-radius: 10px;
+    border-color: rgb(190, 190, 251) ;
+    background-color: rgb(182, 188, 252);
+}
+
+.choose-char-msg{
+    margin-top: 40px;
+    font-weight: 900;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.background-tilde-right{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: auto; 
+}
+
+.background-tilde-left{
+    height: auto; 
+}
+
+.character-options-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.char-image-container{
+    width: 180px; /**180*/
+    height: 165px; /**1*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+   
+}
+
+
+
+.confirm-button{
+    background-color: #5ededa;
+    width: 150px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    border-color: rgb(55, 247, 231);
+    color: white;
+}
+
+@media only screen and (max-device-width: 365px) {
+    .background-tilde-right{
+        width: 25%;
+    
+    }
+    .background-tilde-left{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-device-width: 476px) {
+    .background-image{
+        width: 65%;
+    }
+    
+    .background-tilde-right{
+        width: 30%;
+    
+    }
+    .background-tilde-left{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-device-width: 514px) {
+    .background-image{
+        width: 40%;
+    }
+
+}
+

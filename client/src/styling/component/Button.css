@@ -1,0 +1,29 @@
+.button-container{
+    justify-content: center;
+    align-items: center;
+    background-color: #c9cfc9;
+    border-radius: 20px;
+    padding: 1px 6px;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+.right-button-img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 20px;
+    border: none;
+    border-radius: 50px;
+}
+
+.left-button-img{
+    height: 20px;
+    border: none;
+    border-radius: 50px;
+}
+
