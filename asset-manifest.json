@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Appropriate_Web/static/css/main.646dc876.css",
+    "main.js": "/Appropriate_Web/static/js/main.478bf21f.js",
+    "static/media/letter.gif": "/Appropriate_Web/static/media/letter.4c00c050583392974866.gif",
+    "static/media/letter_gif.gif": "/Appropriate_Web/static/media/letter_gif.fafc39c6713840cf6e8d.gif",
+    "static/media/note.png": "/Appropriate_Web/static/media/note.c2d20601449b46f8a743.png",
+    "static/media/letter_test.gif": "/Appropriate_Web/static/media/letter_test.d6e3422fdf55264bb84d.gif",
+    "static/media/1.png": "/Appropriate_Web/static/media/1.70dbe210c4fc5e7423f1.png",
+    "static/media/3.png": "/Appropriate_Web/static/media/3.3fd11e1d6c9b705985ed.png",
+    "static/media/stand1_2.png": "/Appropriate_Web/static/media/stand1_2.be6323040905213ddfbe.png",
+    "index.html": "/Appropriate_Web/index.html",
+    "main.646dc876.css.map": "/Appropriate_Web/static/css/main.646dc876.css.map",
+    "main.478bf21f.js.map": "/Appropriate_Web/static/js/main.478bf21f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.646dc876.css",
+    "static/js/main.478bf21f.js"
+  ]
+}
