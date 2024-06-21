@@ -28,14 +28,17 @@ import lnL from "../assets/crew/lila_neugebauer/letter/letter.gif"
 import daL from "../assets/crew/dede_ayite/letter/letter.gif"
 import franzL from "../assets/characters/franz/letter/letter.gif"
 import bjjL from "../assets/crew/bjj/letter/letter.gif"
+import staffL from "../assets/staff/letter.gif"
 import ModalLetterPage from './ModalLetterPage'
 import heart from "../assets/heart.png"
 import circle from "../assets/circle.png"
 import note from "../assets/note.png"
 
 function LandingPage() {
-  const [showLetter, setSetLetter] = useState(false)
+  const [showLetter, setShowLetter] = useState(false)
   const [chosenCharacter, setChosenCharacter] = useState(0);
+  const [staff, setStaff] = useState(false)
+
   const charactersMap = [
     {id: 0, charName: 'Lila Neugebauer', img: lila, desc: "La Maestra of this Orchestra", letter: lnL},
     {id: 1, charName: 'Branded Jacobs-Jenkins', img: bjj, desc: "The Origin of this Great Work", letter: bjjL},
@@ -51,16 +54,18 @@ function LandingPage() {
     {id: 11, charName: 'Graham Campbell', img: rhys, desc: "Should've Been Me", letter: rhysL},
     {id: 12, charName: 'Alyssa Marvin', img: cassidy, desc: "No you're not almost an adult", letter: cassidyL},
     {id: 13, charName: 'Everett Sobers', img: ainsley, desc: "Cool [Klux klan] Kid (jokes)", letter: ainsL},
+    {id: 14, charName: 'The Awesome Staff', letter: staffL}
   ]
 
-  //done letters + redesign ui latest Thursday
-
-  function handleChosenCharacter(){
-    setSetLetter(true)
+  function handleChosenCharacter({showStaff}){
+    if (showStaff){setStaff(true)}
+    setShowLetter(true)
+    
   }
 
   function closeModalLetter(){
-    setSetLetter(false)
+    setShowLetter(false)
+    setStaff(false)
   }
 
 
@@ -88,7 +93,17 @@ function LandingPage() {
   return (
     <div className='main-container'>
       
-      {showLetter && <ModalLetterPage show={showLetter} char={charactersMap[chosenCharacter]} onClose={closeModalLetter}  />}
+      {showLetter && !staff && 
+      <ModalLetterPage show={showLetter} 
+        char={charactersMap[chosenCharacter]} 
+        onClose={closeModalLetter} />}
+
+      {showLetter && staff && 
+      <ModalLetterPage show={showLetter} 
+        char={charactersMap[14]} 
+        onClose={closeModalLetter} />}
+
+      
       <div className='background-container'>
 
         <h5 style={{marginTop: 10, color: 'white'}}>
@@ -118,7 +133,8 @@ function LandingPage() {
       <div style={{marginBottom: 30}} />
       
       {/**Modal pop up for this one */}
-      <button className='confirm-button' style={{backgroundColor: 'green'}}><i>Didn't see yours?</i></button>
+      <button onClick={() => handleChosenCharacter({showStaff: true})}
+      className='confirm-button' style={{backgroundColor: 'green'}}><i>Didn't see yours?</i></button>
       <div style={{marginBottom: 30}} />  
 
 
