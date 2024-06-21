@@ -75,13 +75,13 @@ function LandingPage() {
       setChosenCharacter(temp)
     }
     else {
-      setChosenCharacter(charactersMap.length - 1)
+      setChosenCharacter(charactersMap.length - 2)
     }
   }
 
   function handleRightClick(){
     let temp = chosenCharacter + 1;
-    if (temp < charactersMap.length){
+    if (temp < charactersMap.length - 1){
       setChosenCharacter(temp)
     }
     else {
