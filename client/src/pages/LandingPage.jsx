@@ -14,6 +14,8 @@ import da from "../assets/crew/dede_ayite/stand1_2.png"
 import ainsley from "../assets/characters/ainsley/1.png"
 import dots from "../assets/crew/dots/3.png"
 import pp from "../assets/crew/pickens_poor/2.png"
+import tb from "../assets/crew/tina_benko/stand.png"
+import tbL from "../assets/crew/tina_benko/letter.gif"
 import toniL from "../assets/characters/toni/letter/letter_test.gif"
 import rhysL from "../assets/characters/rhys/letter/letter_gif.gif"
 import boL from "../assets/characters/bo/letter/letter.gif"
@@ -54,7 +56,8 @@ function LandingPage() {
     {id: 11, charName: 'Graham Campbell', img: rhys, desc: "Should've Been Me", letter: rhysL},
     {id: 12, charName: 'Alyssa Marvin', img: cassidy, desc: "No you're not almost an adult", letter: cassidyL},
     {id: 13, charName: 'Everett Sobers', img: ainsley, desc: "Cool [Klux klan] Kid (jokes)", letter: ainsL},
-    {id: 14, charName: 'The Awesome Staff', letter: staffL}
+    {id: 14, charName: 'Tina Benko', img: tb, desc: "The Day Savior", letter: tbL},
+    {id: 15, charName: 'The Awesome Staff', letter: staffL}
   ]
 
   function handleChosenCharacter({showStaff}){
@@ -100,7 +103,7 @@ function LandingPage() {
 
       {showLetter && staff && 
       <ModalLetterPage show={showLetter} 
-        char={charactersMap[14]} 
+        char={charactersMap[15]} 
         onClose={closeModalLetter} />}
 
       
