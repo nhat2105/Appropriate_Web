@@ -12,7 +12,7 @@ function ModalBackupPage({show, onClose}) {
         keyboard={false}
     >
         <Modal.Header closeButton>
-            ALERT - Please close this now if you are performing
+            ALERT - Please close this now if you are stagedooring
         </Modal.Header>
 
         <img src={handwritten} alt="" width="100%" />
